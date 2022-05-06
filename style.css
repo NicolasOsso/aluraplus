@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+    --botao-azul-efeito: #167BF7;
+}
+
+body{
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.principal{
+    background-image: url("Imagens/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+}
+
+.container__caixa{
+    margin: 0 6em;
+    text-align: center;
+}
+
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
+
+.container__botao{
+    background-color: var(--botao-azul);
+    text-decoration: none;
+    color: var(--branco-principal);
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+    display: block;
+    margin-bottom: 1.5em;
+    transition: 0.3s all;
+}
+.container__botao:hover{
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor-de-fundo);
+}
+
+
+.botao_secundario{
+    background: transparent;
+    border: 2px solid var(--cinza-secundario);
+}
+
+.container__aviso{
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+
+.secundario{
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem{
+    width: 90%;
+}
+
+.descricao__titulo{
+    color: var(--branco-principal);
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 0.4rem;
+}
+
+.descricao__texto{
+    color: var(--cinza-secundario);
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.computadores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+
+.titulo_dispositivos{
+    font-size: 48px;
+}
+
+.container__objetos{
+    display: flex;
+    flex-direction: row;
+}
+
+.TV{
+    text-align: center;
+}
+
+
+
+.container_footer{
+    margin-bottom: 2rem;
+}
+
+.opcoes-footer{
+    text-align: center;
+}
+
+.opcoes-footer__lista{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0 0 0;
+}
+
+.opcoes__lista{
+    list-style: none;
+}
+
+.lista__link{
+    color: var(--branco-principal);
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s all;
+}
+.lista__link:hover{
+    color: var(--botao-azul);
+    cursor: pointer;
+	opacity: 0.8;
+}
+.lista__link:active{
+    color: purple;
+}
+
+
+
+.descricao__ultimas-escritas{
+    color: var(--cinza-secundario);
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 1rem;
+}
+
+.descrito-2{
+    margin: 0 2rem;
+}
+
+@media(max-width: 768px){
+    .opcoes-footer__lista{
+        flex-direction: column;
+    }
+}
